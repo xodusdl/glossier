@@ -1,0 +1,267 @@
+/* font */
+@font-face {
+    font-family: "Apercu";
+    font-style: normal;
+    src: url("../font/Apercu.woff");
+}
+@font-face {
+    font-family: "Apercu";
+    font-weight: 500;
+    src: url("../font/Apercu-Medium.woff");
+}
+@font-face {
+    font-family: "Apercu";
+    font-style: italic;
+    font-weight: 500;
+    src: url("../font/Apercu-MediumItalic.woff");
+}
+@font-face {
+    font-family: "Apercu";
+    src: url("../font/Apercu-Bold.woff");
+    font-style: bold;
+    font-weight: 600;
+}
+/* 기본설정 */
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+.hidden{
+    width: 1px;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    position: absolute;
+}
+ul.skipmenu_list li a:focus{
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    z-index: 999;
+}
+/* 기본설정 끝 */
+/* 상단영역 시작 */
+div#header_wrap{
+    width: 100%;
+    height: 32px;
+    min-width:768px;
+    background: #fff;
+    position: absolute;
+    top: 0px; 
+    left: 0px;
+    z-index: 10;
+}
+header{
+    width: 1240px;
+    height: 100%;
+    margin: 0px auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+h1#logo{
+    width: 130px;
+    height: 64px;
+    /* overflow: hidden; */
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: .3s ease-out;
+}
+h1#logo:hover{
+    top: -32px;
+}
+span.logo_main{
+    display: block;
+    font: italic 16px/32px "Apercu";
+}
+span.logo_hover{
+    display: block;
+    font: normal 16px/32px "Apercu";
+}
+nav#menu{
+    width: 440px;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left: 50%;
+    margin-left: -220px;
+}
+ul#menu_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+ul#menu_list li{
+    font: normal 14px/32px "Apercu";
+    width: auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+ul#menu_list li::before{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #000000;
+    position: absolute;
+    left: 0px;
+    top: 31px;
+    /* 바로 안나오게 scale(가로,세로)*/
+    transform: scale(0,1);
+    transition: .3s ease-out;
+}
+ul#menu_list li:hover::before{
+    transform: scale(1,1);
+}
+div#sub_menu{
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+ul#sub_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+ul#sub_list li{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+ul#sub_list li button{
+    border: none;
+    background: none;
+    font: normal 12px "Apercu";
+}
+/* 상단영역 끝 */
+/* 하단영역 시작 */
+div#footer_wrap{
+    width: 100%;
+    height: 500px;
+    min-width:768px;
+    background: #FAF2F4;
+}
+footer{
+    width: 1240px;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+p.message{
+    width: 100%;
+    height: 50px;
+    font: normal 16px/25px "Apercu";
+}
+div.newsletter{
+    width: 100%;
+    height: 100px;
+}
+form.newsletter_form{
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+form.newsletter_form input{
+    width: 80%;
+    height: 60px;
+    font: normal 16px/60px "Apercu";
+    border: none;
+    border-bottom: solid 1px #000;
+    box-sizing: border-box;
+    text-indent: 16px;
+}
+form.newsletter_form input:focus{
+    outline:none;
+}
+form.newsletter_form button{
+    width: 18%;
+    height: 60px;
+    font: normal 16px/60px "Apercu";
+    background: #fff;
+    border: solid 1px #000;
+    border-top: none;
+    border-left: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+form.newsletter_form button:hover{
+    border: none;
+    background: linear-gradient(90deg, #333 50%, transparent 50%) 0 0 / 4px 1px repeat-x, linear-gradient(90deg, #333 50%, transparent 50%) 0 100% / 4px 1px repeat-x, linear-gradient(0, #333 50%, transparent 50%) 0 0 / 1px 4px repeat-y, linear-gradient(0, #333 50%, transparent 50%) 100% 0 / 1px 4px repeat-y;
+    background-color: #fff;
+    animation: linearGradientMove .2s infinite;
+}
+div.newsletter_text{
+    width: 100%;
+    font: normal 14px "Apercu";
+}
+div.newsletter_text p a{
+    font-style: italic;
+    font-weight: 500;
+    color: #F03341;
+    border-bottom: solid 1px #F03341;
+    box-sizing: border-box;
+}
+div.copyright{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:end
+}
+div.copyright p{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 30px;
+    font: bold 16px/30px "Apercu";
+}
+div.easter_egg{
+    width: 400px;
+    height: 200px;
+}
+div.easter_egg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* 하단영역 끝 */
+@media screen and (max-width: 1240px){
+    header, footer{
+        width: 100%
+    }
+}

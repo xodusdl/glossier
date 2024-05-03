@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- Demo styles -->
+    <style>
+    .swiper{
+        width: 100%;
+        height: 100%;
+    }
+    :root {
+    --swiper-theme-color: #000 !important;
+    }
+    </style>
+
+    <title>Glossier</title>
+</head>
+<body>
+    <!-- 바로가기 메뉴 시작 -->
+    <ul class="skipmenu_list">
+        <li><a href="#" class="hidden">메뉴바로가기</a></li>
+        <li><a href="#" class="hidden">본문바로가기</a></li>
+        <li><a href="#" class="hidden">하단바로가기</a></li>
+    </ul>
+    <!-- 바로가기 메뉴 끝 -->
+    <!-- 상단영역 시작 -->
+    <div id="header_wrap">
+        <header>
+            <h1 id="logo">
+                <a href="#">
+                <span class="logo_main">Glossier</span>
+                <span class="logo_hover">You look good.</span>
+                </a>
+            </h1>
+            <nav id="menu">
+                <h2 class="hidden">메뉴</h2>
+                <ul id="menu_list">
+                    <li><a href="#">Skincare</a></li>
+                    <li><a href="#">Makeup</a></li>
+                    <li><a href="#">Balms</a></li>
+                    <li><a href="#">Body</a></li>
+                    <li><a href="#">Fragrance</a></li>
+                    <li><a href="#">Sets</a></li>
+                </ul>
+            </nav>
+            <!-- <nav id="mobile_menu">Menu</nav> -->
+            <div id="sub_menu">
+                <ul id="sub_list">
+                    <li>
+                        <button type="button">Search</button>
+                    </li>
+                    <li>
+                        <button type="button">Bag<span>(0)</span></button>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <!-- 상단영역 끝 -->
+    <!-- 비주얼 시작 -->
+    <div id="visual_wrap">
+        <h2 class="hidden">비주얼영역</h2>
+        <div class="visual_logo">
+            <img src="./images/visual_logo.png" alt="glossier">
+        </div>
+    </div>
+    <!-- 비주얼 끝 -->
+    <!-- 컨텐츠영역 시작 -->
+    <div class="space"></div>
+    <div id="contents_wrap">
+        <!-- template 영역 시작 -->
+        <section class="template">
+            <h2 class="hidden">template</h2>
+            <div class="template_box">
+                <div class="title_box">
+                    <p class="title">SKIN FIRST</p>
+                </div>
+                <div class="template_img first_box">
+                    <div class="link_btn"><a href="#">Shop skincare</a></div>
+                </div>
+            </div>
+            <div class="template_box">
+                <div class="title_box"><p class="title">MAKEUP SECOND</p></div>
+                <div class="template_img last_box">
+                    <div class="link_btn"><a href="#">Shop makeup</a></div>
+                </div>
+            </div>
+        </section>
+        <!-- template 영역 끝 -->
+        <div class="space"></div>
+        <!-- products 영역 시작 -->
+        <section class="products">
+            <h2 class="hidden">PRODUCTS</h2>
+            <div class="title">
+                <div class="title_box"><p class="title">FEATURED PRODUCTS</p></div>
+                <div class="link_btn shop_btn"><a href="#">Shop all</a></div>
+            </div>
+
+
+            <div class="products_list swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item_img">
+                            <a href="#">
+                                <img src="./images/list00.png" alt="strawberry_balm_dotcom">
+                            </a>
+                        </div>
+                        <div class="item_text">
+                            <p class="item_title">Strawberry Balm Dotcom</p>
+                            <p class="option">Original formula</p>
+                            <p class="price">₩21,800</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                    <!-- <div class="item"> -->
+                        <div class="item_img">
+                            <a href="#">
+                                <img src="./images/list01.png" alt="strawberry_balm_dotcom">
+                            </a>
+                        </div>
+                        <div class="item_text">
+                            <p class="item_title">Strawberry Balm Dotcom</p>
+                            <p class="option">Original formula</p>
+                            <p class="price">₩21,800</p>
+                        </div>
+                    <!-- </div> -->
+                    </div>
+
+                    <div class="swiper-slide">
+                    <!-- <div class="item"> -->
+                        <div class="item_img">
+                            <a href="#">
+                                <img src="./images/list02.png" alt="strawberry_balm_dotcom">
+                            </a>
+                        </div>
+                        <div class="item_text">
+                            <p class="item_title">Strawberry Balm Dotcom</p>
+                            <p class="option">Original formula</p>
+                            <p class="price">₩21,800</p>
+                        </div>
+                    <!-- </div> -->
+                    </div>
+
+                    <div class="swiper-slide">
+                    <!-- <div class="item"> -->
+                        <div class="item_img">
+                            <a href="#">
+                                <img src="./images/list03.png" alt="strawberry_balm_dotcom">
+                            </a>
+                        </div>
+                        <div class="item_text">
+                            <p class="item_title">Strawberry Balm Dotcom</p>
+                            <p class="option">Original formula</p>
+                            <p class="price">₩21,800</p>
+                        </div>
+                    <!-- </div> -->
+                    </div>
+
+                    <div class="swiper-slide">
+                    <!-- <div class="item"> -->
+                        <div class="item_img">
+                            <a href="#">
+                                <img src="./images/list04.png" alt="strawberry_balm_dotcom">
+                            </a>
+                        </div>
+                        <div class="item_text">
+                            <p class="item_title">Strawberry Balm Dotcom</p>
+                            <p class="option">Original formula</p>
+                            <p class="price">₩21,800</p>
+                        </div>
+                    <!-- </div> -->
+                    </div>
+
+                    <div class="swiper-slide">
+                    <!-- <div class="item"> -->
+                        <div class="item_img">
+                            <a href="#">
+                                <img src="./images/list05.png" alt="strawberry_balm_dotcom">
+                            </a>
+                        </div>
+                        <div class="item_text">
+                            <p class="item_title">Strawberry Balm Dotcom</p>
+                            <p class="option">Original formula</p>
+                            <p class="price">₩21,800</p>
+                        </div>
+                    <!-- </div> -->
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+
+        </section>
+        <!-- products 영역 끝 -->
+        <div class="space"></div>
+        <!-- get 영역 시작 -->
+        <section class="get">
+            <h2 class="hidden">GET THE LOOK</h2>
+            <div class="title_box"><p class="title">GET THE LOOK</p></div>
+            <ul class="get_list">
+                <li>
+                    <div class="get_img"><img src="./images/get00.jpg" alt="get00"></div>
+                    <div>
+                        <p class="get_text">The ultimate personal gift.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="get_img"><img src="./images/get01.jpg" alt="get01"></div>
+                    <div>
+                        <p class="get_text">Rescue your skin with all four heroes.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="get_img"><img src="./images/get02.jpg" alt="get02"></div>
+                    <div>
+                        <p class="get_text">Wash her home in the glow of Glossier.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- get 영역 끝 -->
+    </div>
+    <!-- 컨텐츠영역 끝 -->
+    <!-- 하단영역 시작-->
+    <div id="footer_wrap">
+        <footer>
+            <p class="message">At Glossier, we make products inspired by real life. We believe beauty is about having fun, celebrating freedom and being present, because no matter where you are in your beauty journey - YOU LOOK GOOD.</p>
+            <div class="newsletter">
+                <form class="newsletter_form">
+                    <input type="email" autocomplete="email" name="email" placeholder="Email Address">
+                    <button type="button">Submit</button>
+                    <div class="newsletter_text">
+                        <p>You can unsubscribe anytime. For more details, review our <a href="#">Privacy Policy</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="copyright">
+                <p>© 2024 Glossier. All rights reserved.</p>
+                <div class="easter_egg"><img src="./images/smile_wave_black_lg.png" alt="easter_egg"></div>
+            </div>
+        </footer>
+    </div>
+    <!-- 하단영역 끝-->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+    });
+    </script>
+</body>
+</html>
